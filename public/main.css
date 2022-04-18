@@ -5,3 +5,18 @@ body {
 .hidden {
   display: none;
 }
+
+.animation-collaps {
+  transform-origin: top;
+  animation: collaps 250ms reverse;
+}
+
+.animation-expand {
+  transform-origin: top;
+  animation: collaps 250ms alternate;
+}
+
+@keyframes collaps {
+  0% {transform: scaleY(0%);}
+  100% {transform: scaleY(100%);}
+}

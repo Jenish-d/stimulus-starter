@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="bundle.js" async></script>
+</head>
+<body>
+    <div data-controller="lab-report" >
+        <div data-action="load@window->lab-report#loadDate" style="display: flex;" >
+            <div>
+                Reported on &nbsp;
+            </div>
+            <div data-lab-report-target="date" ></div>
+            &nbsp;&nbsp;
+            <div data-lab-report-target="time"></div>
+        </div>
+        <div data-lab-report-target="queryContainer" >
+            <span>
+                Do you want to change the date?
+            </span>
+            <button data-action="click->lab-report#updateDate" >Yes</button>
+            <button data-action="click->lab-report#doNotUpdateDate" >No</button>
+        </div>
+    </div>
+</body>
+</html>
