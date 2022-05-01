@@ -6,29 +6,29 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
-  <div data-controller="hello" >
-    <div data-hello-target="formcontainer" >
+  <div data-controller="patient-form" >
+    <div data-patient-form-target="formContainer" >
       <label>First name</label>
-      <input data-hello-target="firstname" type="text">
+      <input data-patient-form-target="firstName" type="text">
       <p>Last name
-      <input data-hello-target="lastname" type="text">
+      <input data-patient-form-target="lastName" type="text">
       </p>
       <p>
-      <input data-hello-target="sexmale" type="radio" name="sex" id="male" value="male">
+      <input data-patient-form-target="sexMale" type="radio" name="sex" id="male" value="male">
       <label for="male">Male</label>
-      <input data-hello-target="sexfemale" type="radio" name="sex" id="female" value="female" >
+      <input data-patient-form-target="sexFemale" type="radio" name="sex" id="female" value="female" >
       <label for="female">Female</label>
       </p>
       <label>Age</label>
-      <input data-hello-target="age" type="number">
-      <button data-action="click->hello#save">Save</button>
+      <input data-patient-form-target="age" type="number">
+      <button data-action="click->patient-form#save">Save</button>
     </div>
-    <div data-hello-target="displaycontainer" class="hidden" >
-      <h4 data-hello-target="firstnamedisplay"></h4>
-      <h4 data-hello-target="lastnamedisplay"></h4>
-      <h4 data-hello-target="agedisplay"></h4>
-      <h4 data-hello-target="genderdisplay"></h4>
-      <button data-action="click->hello#edit ">Edit</button>
+    <div data-patient-form-target="displayContainer" class="hidden" >
+      <h4 data-patient-form-target="firstNameDisplay"></h4>
+      <h4 data-patient-form-target="lastNameDisplay"></h4>
+      <h4 data-patient-form-target="ageDisplay"></h4>
+      <h4 data-patient-form-target="genderDisplay"></h4>
+      <button data-action="click->patient-form#edit">Edit</button>
     </div>
   </div>
 </body>
